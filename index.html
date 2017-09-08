@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Caviar Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="page-header container">
+
+    <div class="sign-in col-xs-2 col-lg-4"><a href="#"> <img class="header-img" src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/profile.png" alt="profile"></a><span class="header-text hidden-xs"> Sign In</span></div>
+
+    <div class="main-title col-xs-8 col-lg-4">
+      <h1>caviar</h1></div>
+
+    <div class="bag col-xs-2 col-lg-4"><span class="header-text hidden-xs">No Items </span><a href="#"><img class="header-img" src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/bag.png" alt="bag"></a></div>
+
+    </div>
+  </header>
+
+  <div class="row-fluid">
+    <div class="container banner">
+      <div class="container col-xs-6 banner-text">
+        <p>SF: East Bay Restaurants</p>
+        <h3>Homeroom</h3>
+        <h4>Mac & Cheese Specialists.</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="under-banner container">
+
+    <div class="col-xs-12 col-lg-5 delivery">
+      <h5><span class="time">Delivery</span> within 38-49 min</h5>
+      <h5>Open Now <a href="#" class="hours" data-toggle="modal" data-target="#hours">View Available Hours</a></h5>
+
+      <!-- <div class="container"> -->
+      <!-- Trigger the modal -->
+      <!-- <a href="#" class="hours" data-toggle="modal" data-target="#hours">View Available Hours</a> -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="hours" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Available Hours</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Main Menu Available Now</th>
+                    <th>Lunch Menu Available Now</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>11:00AM - 09:30PM</td>
+                    <td>11:00AM - 03:30PM</td>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>11:00AM - 10:00PM</td>
+                    <td>11:00AM - 03:30PM</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>11:00AM - 10:00PM</td>
+                    <td>11:00AM - 03:30PM</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>11:00AM - 10:00PM</td>
+                    <td>11:00AM - 03:30PM</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>11:00AM - 10:00PM</td>
+                    <td>11:00AM - 03:30PM</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>11:00AM - 10:00PM</td>
+                    <td>11:00AM - 03:30PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- delivery div -->
+
+    <div class="group-order col-xs-12 col-lg-5">
+      <input type="text" class="two-people" placeholder="      Start Group Order">
+    </div>
+
+  </div>
+
+
+  <div class="orders-over container">
+    <p>Orders over $350 require 24 hours advanced notice.</p>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <div class="menu-title">
+      <p>SECRET MENU</p>
+    </div>
+
+    <div class="item col-xs-6 col-lg-4">
+      <img src="https://img.trycaviar.com/TJBuzy6bs7K-nZ80hrh2OT7Hr8Y=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156132-201608191857.jpg" class="img-responsive" alt="image-of-dish">
+
+      <div class="overlay">
+        <div class="text">Add to Cart</div>
+      </div>
+
+      <div class="dish-title">Secret Menu: Breakfast Mac</div>
+      <div class="description">Caviar exclusive. Breakfast Mac: classic mac with bacon and egg with side of a biscuit.</div>
+      <div class="price">19.45</div>
+    </div>
+
+    <div class="item col-xs-6 col-lg-4"><img src="https://img.trycaviar.com/F63v80PwCEFihW5E_OPszkmnzvw=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156336-201608191857.jpg" class="img-responsive" alt="image-of-dish">
+
+      <div class="overlay">
+        <div class="text">Add to Cart</div>
+      </div>
+
+      <div class="dish-title">Secret Menu: Breakfast Mac</div>
+      <div class="description">Caviar Exclusive. Roasted brussels sprouts with bacon, topped with a fried egg.</div>
+      <div class="price">9.80</div>
+    </div>
+
+    <div class="item col-xs-6 col-lg-4" id="veg-eggy"><img src="https://img.trycaviar.com/moE-oRIOGim0-0uFHb5AI-xB7PU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156133-201608191857.jpg" class="img-responsive" alt="image-of-dish">
+
+      <div class="overlay">
+        <div class="text">Add to Cart</div>
+      </div>
+
+      <div class="dish-title">Secret Menu: Breakfast Mac</div>
+      <div class="description">Secret Menu: (Vegetarian) Eggy Sprouts Caviar exclusive. Roasted brussels sprouts, topped with a fried egg.</div>
+      <div class="price">8.60</div>
+    </div>
+
+    <div class="modal fade" id="item-modal" role="dialog">
+
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <img src="https://img.trycaviar.com/moE-oRIOGim0-0uFHb5AI-xB7PU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156133-201608191857.jpg">
+            </div> <!--end of modal-header -->
+
+            <h4>Secret Menu: Eggy Bacon Sprouts</h4>
+            <p>Caviar Exclusive. Roasted brussels sprouts with bacon, topped with fried egg.</p>
+            <hr>
+
+            <h5>IF ITEM UNAVAILABLE</h5>
+            <div class="radio">
+              <label class="selected"><input type="radio" name="optradio" class="selected">Substitute with restaurant recommendation</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Remove item</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Cancel entire order</label>
+            </div>
+
+            <h5>OPTIONAL ITEM INSTRUCTIONS</h5>
+
+            <textarea cols="50" rows="3" placeholder="e.g. 'No Mayo!' Please write concisely  and clearly. Any resulting price adjustments will be added by the restaurant after checkout."></textarea>
+            <!-- <hr> -->
+
+            <div class="btn-group">
+              <button type="button" class="modal btn btn-round btn-default">-</button>
+              <button type="button" class="modal btn btn-default">QTY: 1</button>
+              <button type="button" class="modal btn btn-round btn-default">+</button>
+
+              <div class="modal-price">9.80</div>
+            </div> <!--end of btn-group -->
+
+            <button type="button" class="modal btn btn-default btn-lg btn-block modal-add-to-cart">Add to Cart</button>
+
+        </div> <!--end of modal-content -->
+      </div> <!--end of modal-dialog -->
+    </div> <!--end of modal-fade -->
+
+  </div> <!--end of container -->
+  <hr>
+
+  <div class="container">
+
+    <div class="menu-title">
+      <p>LUNCH MENU</p>
+    </div>
+
+
+    <div class="item col-xs-6 col-lg-4"><img src="https://img.trycaviar.com/m5lLB-JY9wQWWTx7VPUCIXrWjpM=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9042.jpg" class="img-responsive" alt="image-of-dish">
+
+      <div class="overlay">
+        <div class="text">Add to Cart</div>
+      </div>
+
+      <div class="dish-title">Smoky Bacon Mac</div>
+      <div class="description">Rich and bold with smoked cheddar, jack cheese, and bacon.</div>
+      <div class="price">13.85</div>
+    </div>
+
+    <div class="item col-xs-6 col-lg-4"><img src="https://img.trycaviar.com/-xcqZTu1821FAa80VEUvvJHb330=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9041.jpg" class="img-responsive" alt="image-of-dish">
+
+      <div class="overlay">
+        <div class="text">Add to Cart</div>
+      </div>
+
+      <div class="dish-title">Classic Mac</div>
+      <div class="description">Homeroom’s super creamy and extra cheesy remake of the all-cheddar mac you ate as a kid.</div>
+      <div class="price">11.75</div>
+    </div>
+
+    <div class="item col-xs-6 col-lg-4"><img src="https://img.trycaviar.com/aYETAvPu24hjhyc5EYdb6B1wDsk=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9048.jpg" class="img-responsive" alt="image-of-dish">
+
+      <div class="overlay">
+        <div class="text">Add to Cart</div>
+      </div>
+
+      <div class="dish-title">Gilroy Garlic Mac</div>
+      <div class="description">Creamy gouda, sharp pecorino, and just the right amount of garlic.</div>
+      <div class="price">12.90</div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-left-panel col-xs-12 col-lg-4">
+
+        <div class="left-panel-text">SF: East Bay
+          <span class="caret"></span>
+        </div>
+
+        <div class="tower-image">
+          <img src="http://www.foundsf.org/images/a/ab/Coit-tower-1930s.jpg" alt="tower_image" class="img-thumbnail hidden-xs" width="100" height="80">
+        </div>
+      </div>
+      <!-- end of left-panel -->
+
+      <div class="footer-middle-panel col-xs-12 col-lg-4">
+        <h4 class="middle-panel-title">Order from your phone</h4>
+        <div class="order-form">
+          <button type="button" class="btn btn-default">(000) 000 - 0000</button>
+          <button type="button" class="btn hidden-xs">Get the App</button>
+        </div>
+        <div class="middle-panel-text">Enter your mobile number and we'll send you the app. Available for iOS and Android.</div>
+
+      </div>
+      <!-- end of middle panel -->
+
+      <div class="footer-right-panel col-xs-12 col-lg-4">
+
+        <ul>
+          <li>For Companies<a href="#"><span class="caret-right pull-right"></span></a></li>
+        </ul>
+
+        <ul>
+          <li>For Restaurants<a href="#"><span class="caret-right pull-right"></span></a></li>
+        </ul>
+
+        <ul>
+          <li>Be a Courier<a href="#"><span class="caret-right pull-right"></span></a></li>
+        </ul>
+
+        <ul>
+          <li>Gift Cards<a href="#"><span class="caret-right pull-right"></span></a></li>
+        </ul>
+
+      </div>
+      <!-- end of right panel -->
+
+      <div class="footer-links">
+        <!-- <div class="container"> -->
+        <ul>
+          <li>Help</li>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>Press</li>
+          <li>Affiliate Program</li>
+          <li>Jobs</li>
+          <li>Contact</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li><a href="#"><img src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/twitter.png" alt="twitter_logo" class="hidden-xs"></a></li>
+          <li><a href="#"><img src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/insta.png" alt="insta_logo" class="hidden-xs"></a></li>
+          <li><a href="#"><img src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/fb.png" alt="fb_logo" class="hidden-xs"></a></li>
+        </ul>
+      </div>
+
+
+      <hr>
+      <div class="copyright">
+        &copy;2012-2017 Square, Inc.
+      </div>
+      <div class="bottom-logo">
+        <img src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/logo.png" alt="company_logo">
+      </div>
+  </footer>
+  <script type="text/javascript" src="script.js">
+  </script>
+</body>
+
+</html>
