@@ -11,8 +11,8 @@ body {
 .container {
   width: 90%;
   margin: 10px auto;
-  padding: 10px 0;
-  border: 1px solid black;
+  /*padding: 10px 0;*/
+  /*border: 1px solid black;*/
 }
 
 .page-header {
@@ -25,16 +25,16 @@ body {
 
 .sign-in {
   float: left;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin-top: 15px;
   padding: 0;
 }
 
 .main-title {
   float: left;
-  color: red;
+  color: #f97242;
   text-align: center;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .main-title h1 {
@@ -44,7 +44,7 @@ body {
 
 .bag {
   float: right;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   text-align: right;
   margin-top: 15px;
   padding: 0;
@@ -66,7 +66,7 @@ body {
   top: 40%;
   left: 15%;
   width: auto;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .banner-text  h3, h4 {
@@ -76,7 +76,7 @@ body {
 }
 
 .banner p {
-  color: red;
+  color: #f97242;
   font-size: 14px;
   padding: 0;
   margin: 0;
@@ -85,8 +85,8 @@ body {
 .under-banner {
   width: 90%;
   margin: 0 auto;
-  height: 100px;
-  border: 1px solid black;
+  /*height: 100px;*/
+  /*border: 1px solid black;*/
 }
 
 .delivery {
@@ -94,18 +94,18 @@ body {
   margin-top: 20px;
   text-align: left;
   padding: 0;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .time, .hours {
-  color: red;
+  color: #f97242;
 }
 
 .group-order {
   float: right;
   margin-top: 30px;
   padding: 0;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .two-people {
@@ -122,8 +122,8 @@ body {
 .orders-over {
   margin: 0 auto;
   width: 90%;
-  padding: 20px;
-  color: #57a356;
+  /*padding: 20px;*/
+  color: #39b238;
   font-size: 18px;
 }
 
@@ -135,18 +135,35 @@ body {
 }
 
 .item {
-  border: 1px solid black;
-  height: 300px;
+  /*height: 300px;*/
+  height: auto;
 }
 
+.dish-title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.description {
+  text-align: left;
+}
+
+.price {
+  color: #f97242;
+  text-align: left;
+}
+
+/*****************************************
+            HOVER EFFECT
+******************************************/
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-   height: 70%;
-   width: 100%;
+  height: 80%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #f7851d;
@@ -163,47 +180,128 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-   /*-ms-transform: translate(-50%, -50%); */
 }
 
-.dish-title {
+/*****************************************
+            MODALS
+******************************************/
+
+  /*AVAILABLE HOURS MODAL */
+
+/******************************************/
+
+.modal-body {
+  padding: 0;
+}
+
+.hours-subtitle {
+  display: block;
+  color: #39b238;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+  /*DISH ITEM MODAL */
+
+/******************************************/
+
+.modal-content {
+  padding: 0 10px 20px;
+}
+
+.modal-header {
+  padding: 0;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-item-name, .modal-item-desc {
   text-align: left;
-  font-weight: bold;
+  padding-bottom: 10px;
+  color: black;
 }
 
-.description {
+.modal-item-legend {
+  font-size: 15px;
+}
+
+.item-substitutions, .instructions {
   text-align: left;
 }
 
-.price {
-  color: red;
-  text-align: left;
+.radio input[type=radio] {
+  margin: 0;
 }
 
-h4.modal-title {
-    color: black;
+.instructions textarea {
+  padding: 5px;
 }
 
+textarea {
+  height: auto;
+  width: 100px;
+}
 .modal-dialog {
   width: 35%;
   height: 100%;
 }
-.btn-group {
-  /*border: 1px solid red;*/
+
+.item-summary {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
-.modal-price {
-  float: right;
+
+.item-quantity {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #f97242;
+  border-radius: 40px;
+  flex: 0 1 auto;
+  height: 40px;
+  padding: 15px;
+  position: relative;
+  width: 132px;
 }
+
+button.item_quantity_input-stepper.item_quantity_input-stepper {
+  background-color: white;
+  border: none;
+}
+
+.glyphicon {
+  color: #f97242;
+}
+
+.item-footer {
+  padding: 0 30px;
+}
+
+.item-price {
+  font-size: 18px;
+  flex: 1;
+  font-weight: 700;
+  display: inline;
+  text-align: right;
+}
+
 .modal-add-to-cart {
   margin-top: 20px;
+  padding: 5px;
+  background-color: #f97242;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 18px;
 }
-.btn-round{
-border-radius: 17px;
-}
-/*
-**********************************************************
-FOOTER
-***********************************************************/
+
+/************************************************************/
+/*FOOTER*/
+/************************************************************/
 
 footer {
   margin: 0 auto;
@@ -219,7 +317,7 @@ footer {
 }
 .footer-left-panel {
   float: left;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .left-panel-text {
   margin-bottom: 10px;
@@ -227,7 +325,7 @@ footer {
 
 .footer-middle-panel {
   float: left;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .order-form {
@@ -262,7 +360,7 @@ phone-field {
 .footer-right-panel {
   float: right;
   padding: 0 0 0 25px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .btn-group {
@@ -280,7 +378,7 @@ phone-field {
   list-style: none;
   text-align: left;
   width: 290px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .caret-right {
@@ -296,10 +394,10 @@ phone-field {
 }
 .footer-links {
   clear: both;
-  height: 100px;
+  /*height: 100px;*/
   width: 100%;
   margin: 10px auto;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .footer-links ul {
@@ -327,26 +425,34 @@ phone-field {
   text-align: center;
 }
 
-
 @media (max-width: 991px) {
-
+  .modal-dialog {
+    width: 370px;
+    height: 100%;
+  }
 }
 
 @media (max-width: 767px) {
   .delivery {
-    /*float: left;*/
     margin-top: 20px;
     text-align: center;
     padding: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
   }
 
   .group-order {
     margin: 20px 80px;
     padding: 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
   }
+
   .footer-links {
     padding: 5px 0 0 15px;
   }
+
+  .modal-dialog {
+    width: 370px;
+    height: 100%;
+  }
+
 }

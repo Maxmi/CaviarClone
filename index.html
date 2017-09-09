@@ -24,7 +24,6 @@
 
     <div class="bag col-xs-2 col-lg-4"><span class="header-text hidden-xs">No Items </span><a href="#"><img class="header-img" src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/bag.png" alt="bag"></a></div>
 
-    </div>
   </header>
 
   <div class="row-fluid">
@@ -43,11 +42,7 @@
       <h5><span class="time">Delivery</span> within 38-49 min</h5>
       <h5>Open Now <a href="#" class="hours" data-toggle="modal" data-target="#hours">View Available Hours</a></h5>
 
-      <!-- <div class="container"> -->
-      <!-- Trigger the modal -->
-      <!-- <a href="#" class="hours" data-toggle="modal" data-target="#hours">View Available Hours</a> -->
-
-      <!-- Modal -->
+      <!-- Hours Modal displayed when View Available Hours clicked-->
       <div class="modal fade" id="hours" role="dialog">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -60,11 +55,16 @@
                 <thead>
                   <tr>
                     <th></th>
-                    <th>Main Menu Available Now</th>
-                    <th>Lunch Menu Available Now</th>
+                    <th>Main Menu
+                    <span class="hours-subtitle">Available Now</span>
+                    </th>
+                    <th>Lunch Menu
+                    <span class="hours-subtitle">Available Now</span>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
+
                   <tr>
                     <td>Sunday</td>
                     <td>11:00AM - 09:30PM</td>
@@ -107,8 +107,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
-    <!-- delivery div -->
 
     <div class="group-order col-xs-12 col-lg-5">
       <input type="text" class="two-people" placeholder="      Start Group Order">
@@ -131,6 +129,7 @@
     <div class="item col-xs-6 col-lg-4">
       <img src="https://img.trycaviar.com/TJBuzy6bs7K-nZ80hrh2OT7Hr8Y=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156132-201608191857.jpg" class="img-responsive" alt="image-of-dish">
 
+      <!-- This is displayed when item is hovered over -->
       <div class="overlay">
         <div class="text">Add to Cart</div>
       </div>
@@ -162,52 +161,97 @@
       <div class="price">8.60</div>
     </div>
 
+    <!-- Modal for Item - displayed when any area of item is clicked -->
     <div class="modal fade" id="item-modal" role="dialog">
 
       <div class="modal-dialog">
+
         <!-- Modal content-->
         <div class="modal-content">
 
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <img src="https://img.trycaviar.com/moE-oRIOGim0-0uFHb5AI-xB7PU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156133-201608191857.jpg">
-            </div> <!--end of modal-header -->
+            <button aria-hidden="true" type="button" class="close modal-close" data-dismiss="modal">&times;</button>
+            <img class="modal-img" src="https://img.trycaviar.com/moE-oRIOGim0-0uFHb5AI-xB7PU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156133-201608191857.jpg">
+          </div>
+          <!--end of modal-header -->
 
-            <h4>Secret Menu: Eggy Bacon Sprouts</h4>
-            <p>Caviar Exclusive. Roasted brussels sprouts with bacon, topped with fried egg.</p>
-            <hr>
+          <div class="modal-body">
+            <h4 class="modal-item-name">Secret Menu: Eggy Bacon Sprouts</h4>
 
-            <h5>IF ITEM UNAVAILABLE</h5>
-            <div class="radio">
-              <label class="selected"><input type="radio" name="optradio" class="selected">Substitute with restaurant recommendation</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="optradio">Remove item</label>
-            </div>
-            <div class="radio">
-              <label><input type="radio" name="optradio">Cancel entire order</label>
-            </div>
-
-            <h5>OPTIONAL ITEM INSTRUCTIONS</h5>
-
-            <textarea cols="50" rows="3" placeholder="e.g. 'No Mayo!' Please write concisely  and clearly. Any resulting price adjustments will be added by the restaurant after checkout."></textarea>
+            <p class="modal-item-desc">Caviar Exclusive. Roasted brussels sprouts with bacon, topped with fried egg.</p>
             <!-- <hr> -->
+            <div class="item-substitutions">
+              <legend class="modal-item-legend">
+                <span class="modal-label-text">IF ITEM UNAVAILABLE</span>
+              </legend>
 
-            <div class="btn-group">
-              <button type="button" class="modal btn btn-round btn-default">-</button>
-              <button type="button" class="modal btn btn-default">QTY: 1</button>
-              <button type="button" class="modal btn btn-round btn-default">+</button>
+              <div class="item-substitutions radio">
+                <input class="option" checked type="radio" name="optradio 1">
+                <label for="optradio 1">Substitute with restaurant recommendation</label>
+              </div>
 
-              <div class="modal-price">9.80</div>
-            </div> <!--end of btn-group -->
+              <div class="item-substitutions radio">
+                <input class="option" type="radio" name="optradio 2">
+                <label for="optradio 2">Remove Item</label>
+              </div>
 
-            <button type="button" class="modal btn btn-default btn-lg btn-block modal-add-to-cart">Add to Cart</button>
+              <div class="item-substitutions radio">
+                <input class="option" type="radio" name="optradio 3">
+                <label for="optradio 3">Cancel entire order</label>
+              </div>
 
-        </div> <!--end of modal-content -->
-      </div> <!--end of modal-dialog -->
-    </div> <!--end of modal-fade -->
+            </div>
+            <!-- end of item-substitutions -->
 
-  </div> <!--end of container -->
+            <div class="instructions">
+              <legend class="modal-item-legend">
+                <span class="modal-label-text">OPTIONAL ITEM INSTRUCTIONS</span>
+              </legend>
+
+              <textarea class="form-control input-md item_form-textarea" rows="3" placeholder="e.g. 'No Mayo!' Please write concisely  and clearly. Any resulting price adjustments will be added by the restaurant after checkout."></textarea>
+
+            </div>
+            <!-- end of instructions -->
+          </div>
+          <!--end of modal-body -->
+
+          <hr>
+          <div class="item-footer">
+            <div class="item-summary">
+
+              <div class="item-quantity">
+
+                <button class="item_quantity_input-stepper item_quantity_input-stepper--decrement" type="button"><i class="glyphicon glyphicon-minus"></i></button>
+
+                <label class="item_quantity_label">Qty:</label>
+
+                <input class="item_quantity_input" max="10" min="1" name="cart_item[quantity]" readonly="" step="1" type="number" value="1">
+
+                <button class="item_quantity_input-stepper item_quantity_input-stepper--increment" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+
+              </div>
+              <!--end of modal item-quantity-->
+
+              <div class="item-price">
+                <p class="item-price-text">8.60</p>
+              </div>
+
+            </div>
+            <!--end of modal item-summary-->
+
+            <div class="item-action"><button class="modal-add-to-cart btn-block" type="button">Add to Cart</button></div>
+
+          </div>
+          <!--end of modal item-footer-->
+        </div>
+        <!--end of modal-content -->
+      </div>
+      <!--end of modal-dialog -->
+    </div>
+    <!--end of modal-fade -->
+
+  </div>
+  <!--end of secret menu container -->
   <hr>
 
   <div class="container">
@@ -300,7 +344,6 @@
       <!-- end of right panel -->
 
       <div class="footer-links">
-        <!-- <div class="container"> -->
         <ul>
           <li>Help</li>
           <li>About Us</li>
@@ -316,6 +359,7 @@
           <li><a href="#"><img src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/fb.png" alt="fb_logo" class="hidden-xs"></a></li>
         </ul>
       </div>
+      <!-- end of footer-links -->
 
 
       <hr>
@@ -326,6 +370,7 @@
         <img src="https://curriculum.learnersguild.org/modules/Clone-Caviar/scaffold/icons/logo.png" alt="company_logo">
       </div>
   </footer>
+</div>   <!-- end of footer-container -->
   <script type="text/javascript" src="script.js">
   </script>
 </body>
